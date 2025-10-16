@@ -415,7 +415,7 @@ If you find this project helpful, please give it a ⭐!
 
 <div align="center">
 
-**Made with ❤️ by [Your Name]**
+**Made with ❤️ by Muhammad Hamza Shafqat**
 
 [⬆ Back to Top](#-ai-wall-paint-visualizer)
 
