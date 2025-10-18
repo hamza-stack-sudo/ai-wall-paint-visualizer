@@ -7,7 +7,6 @@
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![React](https://img.shields.io/badge/React-18.0+-61dafb.svg)](https://reactjs.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![SAM](https://img.shields.io/badge/SAM-Meta_AI-purple.svg)](https://github.com/facebookresearch/segment-anything)
 
 [Demo](#-demo) • [Features](#-features) • [Installation](#-quick-start) • [Usage](#-usage) • [Documentation](#-documentation)
 
@@ -62,8 +61,8 @@
 - Multiple walls selection
 
 ### 💪 Performance Options
-- **GPU Mode**: 5-10 seconds detection (when CUDA available)
-- **CPU Mode**: 20-30 seconds detection (works everywhere)
+- **GPU Mode**: 1-2 seconds detection (when CUDA available)
+- **CPU Mode**: 5-10 minutes detection (works everywhere)
 - Automatic device detection
 - Memory-efficient caching
 
@@ -110,7 +109,7 @@ Before you begin, ensure you have:
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ai-wall-paint-visualizer.git
+git clone https://github.com/hamza-stack-sudo/ai-wall-paint-visualizer.git
 cd ai-wall-paint-visualizer
 ```
 
@@ -125,9 +124,8 @@ python download_model.py
 ```
 
 **Option B: Manual Download**
-1. Visit: [SAM Model Checkpoints](https://github.com/facebookresearch/segment-anything#model-checkpoints)
-2. Download: `sam_vit_h_4b8939.pth` (2.5GB)
-3. Place in: `backend/models/sam_vit_h_4b8939.pth`
+1. Download: `sam_vit_h_4b8939.pth` (2.5GB)
+2. Place in: `backend/models/sam_vit_h_4b8939.pth`
 
 ### 3️⃣ Set Up Backend
 
@@ -185,7 +183,7 @@ npm start
 
 2. **Detect Walls** 🔍
    - Click "Detect Walls" button
-   - Wait 20-30 seconds (CPU) or 5-10 seconds (GPU)
+   - Wait 5-10 minutes (CPU) or 1-2 minutes (GPU)
    - AI will identify all wall surfaces
 
 3. **Choose Color** 🎨
@@ -376,7 +374,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- **Meta AI** - For the amazing [Segment Anything Model](https://github.com/facebookresearch/segment-anything)
 - **PyTorch Team** - For the deep learning framework
 - **React Team** - For the frontend framework
 - **OpenCV** - For image processing capabilities
@@ -385,9 +382,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/YOUR_USERNAME/ai-wall-paint-visualizer/issues)
-- 💡 **Feature Requests**: [GitHub Discussions](https://github.com/YOUR_USERNAME/ai-wall-paint-visualizer/discussions)
-- 📧 **Email**: your.email@example.com
+- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/hamza-stack-sudo/ai-wall-paint-visualizer/issues)
+- 💡 **Feature Requests**: [GitHub Discussions](https://github.com/hamza-stack-sudo/ai-wall-paint-visualizer/discussions)
+- 📧 **Email**: hamzashafqat34@gmail
 
 ---
 
@@ -395,7 +392,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you find this project helpful, please give it a ⭐!
 
-[![Star History Chart](https://api.star-history.com/svg?repos=YOUR_USERNAME/ai-wall-paint-visualizer&type=Date)](https://star-history.com/#YOUR_USERNAME/ai-wall-paint-visualizer&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=hamza-stack-sudo/ai-wall-paint-visualizer&type=Date)](https://star-history.com/#hamza-stack-sudo/ai-wall-paint-visualizer&Date)
 
 ---
 

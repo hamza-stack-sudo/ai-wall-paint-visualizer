@@ -130,7 +130,7 @@ const WallPaintVisualizer = () => {
 
     setIsDetecting(true);
     setError('');
-    console.log('🔍 Starting one-time wall detection...');
+    console.log('🔍 Starting wall detection...');
     const startTime = Date.now();
 
     try {
@@ -205,7 +205,7 @@ const WallPaintVisualizer = () => {
 
       if (data.success) {
         setPaintedImage(data.result_image);
-        console.log(`⚡ Instant paint: ${paintTimeMs}ms (${data.walls_painted} walls)`);
+        console.log(`Paint: ${paintTimeMs}ms (${data.walls_painted} walls)`);
       } else {
         setError(data.error || 'Failed to paint walls');
       }
@@ -329,9 +329,9 @@ const WallPaintVisualizer = () => {
 
       {/* Header */}
       <div style={styles.header}>
-        <h1 style={styles.title}>⚡ Instant Wall Paint Visualizer</h1>
+        <h1 style={styles.title}>AI powred Wall Paint Visualizer</h1>
         <p style={styles.subtitle}>
-          Detect once, paint instantly • GPU-free AI powered
+          Paint instantly • Visualizer Paint on your wall 
         </p>
         
         <div style={styles.statusContainer}>
@@ -426,7 +426,7 @@ const WallPaintVisualizer = () => {
               <span style={styles.instructionNumber}>1</span>
               <div>
                 <strong>Click "Detect Walls"</strong>
-                <p>AI will analyze your image once (takes 20-30 seconds on CPU)</p>
+                <p>AI will analyze your image once (takes 5-10 minutes on CPU, 30 seconds to 2 minutes on GPU)</p>
               </div>
             </div>
             <div style={styles.instructionStep}>
@@ -453,7 +453,7 @@ const WallPaintVisualizer = () => {
             </button>
             {isDetecting && (
               <p style={styles.processingHint}>
-                ⏱️ This takes 20-30 seconds on CPU... Grab a coffee! ☕
+                ⏱️ This takes 5-10 minutes on CPU... Grab a coffee! ☕
               </p>
             )}
           </div>
